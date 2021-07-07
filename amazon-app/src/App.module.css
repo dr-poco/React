@@ -1,0 +1,59 @@
+.body{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+
+
+.MainContainer{
+    padding: 4% 12%;
+    margin-top: 32px;
+    box-sizing: border-box;
+
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.ProductPreview{
+    width: 100%;
+    position: relative;
+}
+
+.TimeSection{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    color: white;
+    font-size: 48px;
+    font-weight: 600;
+}
+
+.HeartBeatSection{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    color: white;
+    font-size: 48px;
+    font-weight: 600;
+
+}
+
+.HeartBeatSection > i{
+    color: rgb(255, 0, 0);
+    animation: beat 1s infinite;
+}
+
+@keyframes beat{
+    0% { transform : scale(1,1);}
+    50% { transform : scale(1.2, 1.2);}
+    100% { transform : scale(1,1);}
+}
+.HeartBeatSection > p {
+    margin-top: 16px;
+}
+
+
